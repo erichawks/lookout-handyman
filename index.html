@@ -76,18 +76,25 @@
     .fb-link { display:inline-flex; align-items:center; gap:8px; margin-top:8px; color:var(--navy); font-weight:600; }
     .fb-link svg { width:18px; height:18px; fill:#1877F2; flex:0 0 auto; }
     .fb-link:hover { color:#1877F2; }
+    .nav .fb-link { margin-top:0; flex:0 0 auto; font-size:0.88rem; font-weight:700; white-space:nowrap; }
     @media (max-width:860px) {
       .hero-grid, .services, .split, .cta-band { grid-template-columns:1fr; }
       .cta-band { flex-direction:column; align-items:flex-start; }
       h1 { font-size:2.3rem; }
       .logo-mark img { height:64px; width:64px; }
       .brand-name .word-signal { font-size:1.1rem; }
+      .nav { flex-wrap:wrap; }
+      .nav .fb-link { font-size:0.78rem; }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap nav">
+      <a class="fb-link" href="https://www.facebook.com/LookoutHandyman/" target="_blank" rel="noopener">
+        See My Projects On
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+      </a>
       <a class="brand" href="#top">
         <div class="logo-mark">
           <img src="https://graph.facebook.com/LookoutHandyman/picture?width=800&height=800" width="88" height="88" alt="Lookout Handyman logo" />
@@ -118,8 +125,6 @@
       </div>
     </section>
     <section class="wrap" id="services">
-      <h2 class="section-title">The work</h2>
-      <p class="section-sub">These are jobs customers have already hired Lookout Handyman to do. If you have something else in mind, call and ask.</p>
       <div class="services">
         <article class="service"><div class="icon">⌂</div><h3>Home repairs</h3><p>The household jobs that need a person who shows up, explains the price, and finishes the work.</p></article>
         <article class="service"><div class="icon">▣</div><h3>Gutters & yard work</h3><p>Gutter cleaning, hedge trimming, and tree work — including jobs that cannot wait.</p></article>
