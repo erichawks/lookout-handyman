@@ -11,12 +11,12 @@ Owner / contacts (name + phone or email): Ray — (423) 596-9026
 License / insurance / certifications:
 Primary email:
 Facebook / other social URLs: https://www.facebook.com/LookoutHandyman/
-Logo URL or file: logo.png (source: Facebook page profile image)
+Logo URL or file: Facebook page profile image via graph.facebook.com/LookoutHandyman/picture
 Existing site or brand references: https://www.facebook.com/LookoutHandyman/
 Headline: Repairs around the house.
 GitHub owner/repo: erichawks/lookout-handyman
 Vercel project name: lookout-handyman
-Live URL:
+Live URL: https://lookout-handyman-eric-f564.vercel.app
 Custom domain:
 Out of scope repos (never touch): erichawks/signal-electric-llc ; erichawks/masteryourknitting ; erichawks/fixedyourwebsite ; erichawks/website-leads ; erichawks/handicraft-of-chattanooga ; erichawks/handyman-salvage ; erichawks/nashville-handyman-redesign
 Rejected ideas (do not bring back):
