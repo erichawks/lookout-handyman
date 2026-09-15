@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lookout Handyman | Home Repairs in Chattanooga, TN</title>
+  <meta name="description" content="Lookout Handyman is Ray’s handyman service in Chattanooga, Tennessee. Call (423) 596-9026. Repairs, gutters, yard work, and pressure washing." />
+  <meta name="theme-color" content="#f6f2ee" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:#f6f2ee;
+      --surface:#ffffff;
+      --ink:#1a2433;
+      --navy:#1e3355;
+      --muted:#5c6573;
+      --red:#bd3a36;
+      --red-2:#a3322e;
+      --sky:#9fb0d1;
+      --line:rgba(30,51,85,0.12);
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; min-height:100vh; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1120px, calc(100% - 32px)); margin:0 auto; }
+    header { position:sticky; top:0; z-index:20; background:rgba(246,242,238,0.94); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:10px 0; }
+    .brand { display:flex; align-items:center; gap:14px; min-width:0; }
+    .logo-mark { line-height:0; flex:0 0 auto; }
+    .logo-mark img { display:block; height:88px; width:88px; object-fit:contain; object-position:center; background:transparent; }
+    .brand-name { display:flex; flex-direction:column; align-items:center; text-align:center; min-width:0; }
+    .brand-name .word-signal { font-family:Oswald,sans-serif; font-weight:700; font-size:1.55rem; line-height:1.05; letter-spacing:0.06em; color:var(--navy); text-transform:uppercase; }
+    .brand-name .word-meta { display:flex; align-items:center; justify-content:center; gap:8px; color:var(--muted); font-size:0.72rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; white-space:nowrap; margin-top:6px; }
+    .brand-name .word-meta::before,
+    .brand-name .word-meta::after { content:""; width:18px; height:2px; background:var(--red); border-radius:2px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:8px; padding:10px 16px; font-weight:600; font-size:0.92rem; border:1px solid transparent; transition:0.18s ease; }
+    .btn-gold { background:var(--red); color:#fff; }
+    .btn-gold:hover { background:var(--red-2); }
+    .btn-ghost { background:transparent; color:#fff; border-color:rgba(255,255,255,0.45); }
+    .btn-ghost:hover { border-color:#fff; }
+    .hero { padding:48px 0 40px; }
+    .hero-grid { display:grid; grid-template-columns:1.15fr 0.85fr; gap:36px; align-items:center; }
+    .eyebrow { color:var(--red); font-weight:700; letter-spacing:0.16em; text-transform:uppercase; font-size:0.76rem; margin-bottom:12px; }
+    h1 { font-family:Oswald,sans-serif; font-size:clamp(2.3rem,5vw,3.8rem); line-height:1.12; text-transform:uppercase; letter-spacing:0.02em; margin-bottom:16px; color:var(--navy); }
+    h1 .h1-line { display:block; }
+    h1 .h1-line + .h1-line { margin-top:0.18em; }
+    .lede { color:var(--muted); font-size:1.05rem; max-width:54ch; }
+    .hero-ctas { display:flex; gap:10px; flex-wrap:wrap; }
+    .card-panel { background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:24px; box-shadow:0 12px 30px rgba(30,51,85,0.06); }
+    .card-panel h2 { font-family:Oswald,sans-serif; font-size:1.3rem; letter-spacing:0.04em; margin-bottom:8px; color:var(--navy); }
+    .phone-list { display:grid; gap:10px; margin:16px 0 0; }
+    .phone { display:flex; justify-content:space-between; align-items:center; background:var(--bg); border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
+    .phone strong { font-size:1.05rem; color:var(--navy); word-break:break-word; }
+    .phone small { color:var(--muted); }
+    section { padding:28px 0 12px; }
+    .section-title { font-family:Oswald,sans-serif; font-size:1.8rem; letter-spacing:0.04em; text-transform:uppercase; margin-bottom:8px; color:var(--navy); }
+    .section-sub { color:var(--muted); margin-bottom:22px; max-width:62ch; }
+    .services { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .service { background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:18px; min-height:148px; }
+    .service h3 { font-size:1.02rem; margin:10px 0 6px; color:var(--navy); }
+    .service p { color:var(--muted); font-size:0.92rem; }
+    .icon { width:36px; height:36px; border-radius:10px; display:grid; place-items:center; background:rgba(189,58,54,0.12); color:var(--red); font-size:1.1rem; }
+    .split { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:18px; }
+    .quote { background:var(--surface); border-left:3px solid var(--red); border-radius:0 16px 16px 0; padding:18px; }
+    .quote cite { display:block; margin-top:10px; color:var(--muted); font-style:normal; font-size:0.86rem; }
+    .cta-band { margin:36px 0 8px; background:var(--navy); color:#fff; border-radius:20px; padding:28px; display:flex; justify-content:space-between; align-items:center; gap:18px; }
+    .cta-band .eyebrow { color:#e8b599; }
+    .cta-band .section-title { color:#fff; }
+    .cta-band .section-sub { color:#c9d2e3; }
+    footer { border-top:1px solid var(--line); margin-top:36px; padding:28px 0 40px; color:var(--muted); font-size:0.9rem; }
+    .foot { display:flex; justify-content:space-between; align-items:flex-start; gap:18px; flex-wrap:wrap; }
+    .fb-link { display:inline-flex; align-items:center; gap:8px; margin-top:8px; color:var(--navy); font-weight:600; }
+    .fb-link svg { width:18px; height:18px; fill:#1877F2; flex:0 0 auto; }
+    .fb-link:hover { color:#1877F2; }
+    @media (max-width:860px) {
+      .hero-grid, .services, .split, .cta-band { grid-template-columns:1fr; }
+      .cta-band { flex-direction:column; align-items:flex-start; }
+      h1 { font-size:2.3rem; }
+      .logo-mark img { height:64px; width:64px; }
+      .brand-name .word-signal { font-size:1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top">
+        <div class="logo-mark">
+          <img src="logo.png" width="88" height="88" alt="Lookout Handyman logo" />
+        </div>
+        <div class="brand-name">
+          <span class="word-signal">Lookout Handyman</span>
+          <span class="word-meta">Chattanooga, TN</span>
+        </div>
+      </a>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Local handyman · Chattanooga</p>
+          <h1><span class="h1-line">Repairs around</span><span class="h1-line">the house.</span></h1>
+          <p class="lede">Lookout Handyman is Ray’s service on Shingle Road in Chattanooga. Neighbors call for repairs, gutters, yard work, and the jobs that have been sitting on the list.</p>
+        </div>
+        <aside class="card-panel">
+          <h2>Need a handyman?</h2>
+          <p style="color:var(--muted)">Call Ray. Weekday hours are 7:00 a.m. to 6:00 p.m.</p>
+          <div class="phone-list">
+            <a class="phone" href="tel:+14235969026"><div><small>Call</small><br /><strong>(423) 596-9026</strong></div><span>☎</span></a>
+            <div class="phone"><div><small>Address</small><br /><strong>1000 Shingle Rd<br />Chattanooga, TN 37409</strong></div><span>⌂</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="wrap" id="services">
+      <h2 class="section-title">The work</h2>
+      <p class="section-sub">These are jobs customers have already hired Lookout Handyman to do. If you have something else in mind, call and ask.</p>
+      <div class="services">
+        <article class="service"><div class="icon">⌂</div><h3>Home repairs</h3><p>The household jobs that need a person who shows up, explains the price, and finishes the work.</p></article>
+        <article class="service"><div class="icon">▣</div><h3>Gutters & yard work</h3><p>Gutter cleaning, hedge trimming, and tree work — including jobs that cannot wait.</p></article>
+        <article class="service"><div class="icon">▭</div><h3>Pressure washing</h3><p>Exterior cleaning around the house when the siding, walk, or driveway needs a reset.</p></article>
+      </div>
+    </section>
+    <section class="wrap" id="about">
+      <div class="split">
+        <div class="card-panel">
+          <p class="eyebrow">Who we are</p>
+          <h2 class="section-title" style="font-size:1.45rem">Ray’s shop in Chattanooga</h2>
+          <p class="section-sub" style="margin-bottom:0">Lookout Handyman is a Chattanooga handyman service — not Lookout Handyman Squad in Colorado, and not Lookout Digital or Lookout Inspections. One number, local work.</p>
+        </div>
+        <div class="card-panel">
+          <p class="eyebrow">Hours & area</p>
+          <h2 class="section-title" style="font-size:1.45rem">Chattanooga, weekday hours</h2>
+          <p class="section-sub" style="margin-bottom:0">Monday–Friday 7:00 a.m.–6:00 p.m. Closed Saturday and Sunday. Based at 1000 Shingle Road, Chattanooga, TN 37409.</p>
+        </div>
+      </div>
+    </section>
+    <section class="wrap" id="reviews">
+      <h2 class="section-title">What customers say</h2>
+      <div class="split">
+        <blockquote class="quote">
+          <p>“Ray accommodated me on short notice. He quickly and efficiently did the repairs I needed. His rates are reasonable, and he does a great job. I can't recommend him highly enough!”</p>
+          <cite>Michael Warren</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Ray did a fabulous job helping me with some work at my home. He was punctual (which is very much appreciated!), quick, neat, knew what to do, and fully explained what he was going to do with the price for approval before he started. I will definitely hire him again for additional work. Thank you!!”</p>
+          <cite>Bonnie Schafer</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Ray at Lookout Handyman is extremely responsive and does fast, quality work. My wife and I used him to clean our gutters and trim large, overgrown hedges while we lived overseas and he always did a fabulous job. Highly recommended!”</p>
+          <cite>Jade Alger</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Ray is professional and detail-oriented. He is honest and offers excellent advice to get the desired result. The job was difficult and he did excellent work. He did not cut corners at all, but did the very best job possible. I was so pleased with the outcome. I highly recommend his services!”</p>
+          <cite>Vanessa Drake</cite>
+        </blockquote>
+      </div>
+    </section>
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <p class="eyebrow">Ready when you are</p>
+          <h2 class="section-title" style="margin:0">Call Ray</h2>
+          <p class="section-sub" style="margin:8px 0 0">Weekdays 7–6. Chattanooga.</p>
+        </div>
+        <div class="hero-ctas" style="margin:0">
+          <a class="btn btn-gold" href="tel:+14235969026">(423) 596-9026</a>
+          <a class="btn btn-ghost" href="https://www.facebook.com/LookoutHandyman/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap foot">
+      <div>
+        Lookout Handyman · Chattanooga, TN<br />
+        <a class="fb-link" href="https://www.facebook.com/LookoutHandyman/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+          Join us on Facebook
+        </a>
+      </div>
+      <div>
+        1000 Shingle Rd, Chattanooga, TN 37409<br />
+        &copy; <span id="y"></span> Lookout Handyman. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
